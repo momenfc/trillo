@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="shortcut icon" href="img/logo.png" />
+    <title>Trillo</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="trillo logo" class="logo" />
+        <form class="form">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-group__input"
+              placeholder="search hotels"
+            />
+            <button class="form-group__button">
+              <i class="form-group__icon fas fa-search"> </i>
+            </button>
+          </div>
+        </form>
+        <div class="user-nav">
+          <div class="user-nav__icon-box">
+            <i class="user-nav__icon fas fa-bookmark"> </i>
+            <span class="user-nav__notification">8</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <i class="user-nav__icon fas fa-comments"> </i>
+
+            <span class="user-nav__notification">12</span>
+          </div>
+          <div class="user-nav__user">
+            <img
+              src="img/user.png"
+              alt="user photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">momen</span>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="sidepar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item__active">
+              <a href="#" class="side-nav__link"
+                ><i class="side-nav__icon fas fa-home"></i><span>hotel</span></a
+              >
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link"
+                ><i class="side-nav__icon fas fa-plane-departure"></i
+                ><span>flight</span></a
+              >
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link"
+                ><i class="side-nav__icon fas fa-key"></i
+                ><span>car rental</span></a
+              >
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link"
+                ><i class="side-nav__icon fas fa-map"></i><span>tours</span></a
+              >
+            </li>
+          </ul>
+          <div class="legal">&copy; 2020 by Momen Nasser</div>
+        </div>
+        <main class="hotel-view">
+          <div class="gallary">
+            <figure class="gallary__item">
+              <img
+                src="img/hotel-1.jpg"
+                alt="hotel-1 image"
+                class="gallary__photo"
+              />
+              <div class="gallary__caption">nise view in the night</div>
+            </figure>
+            <figure class="gallary__item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="hotel-2 image"
+                class="gallary__photo"
+              />
+              <div class="gallary__caption">amazing rest next to pool</div>
+            </figure>
+            <figure class="gallary__item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="hotel-3 image"
+                class="gallary__photo"
+              />
+              <div class="gallary__caption">outside view fantastic</div>
+            </figure>
+          </div>
+          <div class="overview">
+            <h1 class="overview__name">hotel las palmas</h1>
+            <div class="overview__stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="overview__address">
+              <i class="fas fa-map-marker-alt overview__address__icon"></i>
+              <button class="btn-inline">albufeira, portugal</button>
+            </div>
+            <div class="overview__rating">
+              <div class="overview__rating__average">8.6</div>
+              <div class="overview__rating__count">409 votes</div>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="description">
+              <p class="pragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
+                sed voluptatibus eum ex voluptates magni velit commodi
+                distinctio at aut iure nesciunt laudantium, pariatur error.
+              </p>
+              <p class="pragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                deserunt! Voluptatum tempora aut rem repudiandae?
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Free wifi in all rooms</li>
+                <li class="list__item">Air conditioning</li>
+                <li class="list__item">Pets allowed</li>
+                <li class="list__item">We speak all languages</li>
+                <li class="list__item">Perfect for families</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  Lucy and 3 other friends recommend this hotel.
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    src="img/user-3.jpg"
+                    alt="friend photo"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-4.jpg"
+                    alt="friend photo"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="friend photo"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-6.jpg"
+                    alt="friend photo"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  eum repellat odit eligendi ratione neque.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="user photo"
+                    class="review__photo"
+                  />
+                  <div class="review__info">
+                    <h4 class="review__info--name">nick smith</h4>
+                    <span class="review__info--date">feb 23rd, 2020</span>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae accusamus maxime ea fugit dolor, odio voluptas eius
+                  inventore iure labore!
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-2.jpg"
+                    alt="user photo"
+                    class="review__photo"
+                  />
+                  <div class="review__info">
+                    <h4 class="review__info--name">nick smith</h4>
+                    <span class="review__info--date">sept 13th, 2020</span>
+                  </div>
+                  <div class="review__rating">9.3</div>
+                </figcaption>
+              </figure>
+              <button class="btn-inline">show all <span>&rarr;</span></button>
+            </div>
+          </div>
+          <div class="cta">
+            <p class="cta__pragraph">
+              GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!
+            </p>
+            <button class="btn">
+              <span class="btn__visibel">book now</span>
+              <span class="btn__invisibel">only 4 rooms left</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
