@@ -159,11 +159,6 @@
         margin-bottom: 0;
       }
     }
-
-    @include respond(phone-smallest) {
-      flex: 0 0 50%;
-      margin-bottom: 0.5rem;
-    }
   }
 
   &__item::before {
@@ -257,12 +252,16 @@
       height: 100%;
       width: 100%;
       background-color: rgba(rgb(3, 3, 3), 0.6);
-      filter: blur(10px);
+      // filter: blur(10px);
       position: absolute;
       top: 0;
       left: 0;
       opacity: 0;
       transition: all 0.4s;
+    }
+
+    @include respond(phone-small) {
+      margin-bottom: 1rem;
     }
   }
 
@@ -298,6 +297,11 @@
   }
   &__item:hover &__caption {
     transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  @include respond(phone-small) {
+    flex-direction: column;
+    padding: 1rem 3rem;
   }
 }
 
